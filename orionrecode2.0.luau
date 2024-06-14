@@ -478,7 +478,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "oreol.xyz - best"
+	WindowConfig.IntroText = WindowConfig.IntroText or "oreol.xyz - On Top"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
@@ -651,7 +651,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Gui Hidden",
+			Name = "Interface Hidden",
 			Content = "Tap RightShift to reopen the interface",
 			Time = 5
 		})
